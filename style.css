@@ -1,0 +1,93 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: url('https://res.cloudinary.com/adenike/image/upload/v1580320772/bench_x74dms.jpg')center no-repeat fixed;
+    background-size: cover;
+}
+main{ 
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -200px;
+}
+section{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    width: 80%;
+    padding: 5px 20px;
+}
+main .heading{
+    text-align: center;   
+}
+main .heading h1{
+     text-decoration: underline;
+    text-transform: capitalize;
+}
+
+section form input{
+    padding: 10px 50px;
+    
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+section form span{
+    background-color: #16365C;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+}
+section form span:hover, .close:hover{
+    background-color: #123;
+}
+section #todo{
+    list-style-type: none;
+}
+section #todo li{
+    position: relative;
+    padding: 10px 10px;
+    width: 70%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #bbb;
+}
+section #todo li:hover{
+    background-color: #ccc;
+    color: #16365C;
+    cursor: pointer;
+}
+section #todo li:checked{
+    text-decoration: line-through;
+    color: #fff;
+    background-color: #123;
+}
+.close{
+    /* background-color: #000; */
+    color: #aaa;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;  
+}
+
+@media(min-width: 700px){
+    section form .form-list{
+    
+        width: 100%;
+    }
+    section form input{
+        width: 70%;
+    }
+    main section ul{
+        
+        padding: 0;
+    }
+}
