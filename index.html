@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>TODO List</title>
 </head>
 <body>
@@ -13,13 +14,13 @@
         <section>
             <div class="heading">
                 <h1>My ToDo list</h1>
-                <h3>Click on the input to add type, once done, click on the + to add new item to the list. To remove an item from the list, click on the &times;.</h3>
+                <h3>Click on the input to add new, once done, click on the pen to append new item to the list. To remove an item from the list, click on the &times;.</h3>
             </div>
             
             <form action="">
                 <div class="form-list">
                     <input id="input" type="text" placeholder="list here...">
-                    <span onclick="addNew()" id="new">&#43;</span>
+                    <span onclick="addNew()" id="new"><i class="fas fa-pen-fancy"></i></span>
                 </div>
                 
             </form>
